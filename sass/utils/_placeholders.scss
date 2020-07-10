@@ -1,0 +1,43 @@
+%text-base {
+  margin: 0;
+  padding: 0;
+}
+
+%list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+%link {
+  text-decoration: none;
+}
+
+%container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 1px dashed red; */
+}
+
+/* Дизайн кнопок */
+%button {
+  color: $primary-white-color;
+  background-color: $accent-color;
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+}
+
+%item-centered {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

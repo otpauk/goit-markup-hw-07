@@ -1,0 +1,61 @@
+/* Особливості у підходах до роботи (Features) */
+/* FEATURES START */
+.features {
+  padding-top: 94px;
+}
+
+.features-container {
+  @extend %container;
+
+  padding-bottom: 94px;
+  border-bottom: 1px solid $line-hr-color;
+}
+
+.features-list {
+  display: flex;
+
+  @extend %list;
+}
+
+.features-list__item {
+  max-width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features-list__icon {
+  display: block;
+}
+
+.features-list__background {
+  @extend %item-centered;
+
+  height: 120px;
+
+  background-color: $secondary-bg-color;
+  border-radius: 4px;
+}
+
+.features-list__title {
+  @extend %text-base;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: $primary-text-color;
+
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-list__text {
+  @extend %text-base;
+
+  color: $secondary-text-color;
+  line-height: 1.71;
+}
+/* FEATURES END */
